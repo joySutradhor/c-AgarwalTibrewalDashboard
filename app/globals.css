@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+.ad_section_space {
+  @apply px-[2vw] pt-[2vh] mb-20;
+}
+
+.tableOverFlow {
+  @apply max-w-[100vw]   px-2 lg:px-0 overflow-hidden  ;
+}
+
+
+.tableOverFlow::-webkit-scrollbar {
+  display: none;
+}
+.tableOverFlow {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}
