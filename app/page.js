@@ -217,7 +217,7 @@ export default function CategoryManagement () {
       fetchCategories()
     } catch (error) {
       toast.error(
-        error.response?.data?.message || 'Failed to create subcategory'
+        error.response?.data?.message || 'Failed to create category'
       )
     } finally {
       setAdding(false)
