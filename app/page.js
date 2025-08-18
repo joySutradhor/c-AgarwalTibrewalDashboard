@@ -276,6 +276,7 @@ export default function CategoryManagement () {
 
   const doDelete = async () => {
     if (!deleteTargetId) return
+    console.log(deleteTargetId)
     try {
       await axios.delete(
         `https://agarwal.mrshakil.com/api/blog/blog-categories/${deleteTargetId}/`,
