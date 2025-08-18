@@ -28,7 +28,7 @@ export default function Page () {
   useEffect(() => {
     if (!id) return
     axios
-      .get(`http://agarwal.mrshakil.com/api/contact/branch/${id}/`)
+      .get(`https://agarwal.mrshakil.com/api/contact/branch/${id}/`)
       .then(res => setFormData(res.data))
       .catch(err => console.error('Error fetching branch:', err))
   }, [id])
@@ -44,7 +44,7 @@ export default function Page () {
     setShowConfirmModal(false)
     try {
       const response = await axios.put(
-        `http://agarwal.mrshakil.com/api/contact/branch/${id}/`,
+        `https://agarwal.mrshakil.com/api/contact/branch/${id}/`,
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       )

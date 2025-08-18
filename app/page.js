@@ -248,7 +248,7 @@ export default function CategoryManagement () {
         parent: updateParent ? Number(updateParent) : null
       }
       await axios.patch(
-        `http://agarwal.mrshakil.com/api/blog/blog-categories/${catUpdateId}/`,
+        `https://agarwal.mrshakil.com/api/blog/blog-categories/${catUpdateId}/`,
         payload,
         {
           headers: { Authorization: `Token ${token}` }
@@ -277,7 +277,7 @@ export default function CategoryManagement () {
     if (!deleteTargetId) return
     try {
       await axios.delete(
-        `http://agarwal.mrshakil.com/api/blog/blog-categories/${deleteTargetId}/`,
+        `https://agarwal.mrshakil.com/api/blog/blog-categories/${deleteTargetId}/`,
         {
           headers: { Authorization: `Token ${token}` }
         }

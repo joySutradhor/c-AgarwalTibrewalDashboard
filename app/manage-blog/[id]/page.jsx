@@ -44,7 +44,7 @@ export default function Page () {
   // Fetch blog details for update
   useEffect(() => {
     if (!blogId) return
-    fetch(`http://agarwal.mrshakil.com/api/blog/blogs/${blogId}/`)
+    fetch(`https://agarwal.mrshakil.com/api/blog/blogs/${blogId}/`)
       .then(res => res.json())
       .then(data => {
         setTitle(data.title)
@@ -72,7 +72,7 @@ export default function Page () {
 
     try {
       const res = await fetch(
-        `http://agarwal.mrshakil.com/api/blog/blogs/${blogId}/`,
+        `https://agarwal.mrshakil.com/api/blog/blogs/${blogId}/`,
         {
           method: 'PUT',
           body: formData

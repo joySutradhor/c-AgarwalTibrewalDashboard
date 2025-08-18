@@ -28,7 +28,7 @@ export default function page () {
   const handleDelete = async id => {
     console.log(id, token, 'check id ')
     try {
-      await axios.delete(`http://agarwal.mrshakil.com/api/blog/blogs/${id}/`, {
+      await axios.delete(`https://agarwal.mrshakil.com/api/blog/blogs/${id}/`, {
         headers: {
           Authorization: `Token ${token}`
         }

@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import JoditEditor from 'jodit-react'
 import axios from 'axios'
 
-
 import { IoCreateOutline } from 'react-icons/io5'
 import toast, { Toaster } from 'react-hot-toast'
 import { useParams, useRouter } from 'next/navigation'
@@ -26,7 +25,7 @@ export default function JobEditForm () {
   useEffect(() => {
     if (!jobId) return
     axios
-      .get(`http://agarwal.mrshakil.com/api/career/job-post/${jobId}/`)
+      .get(`https://agarwal.mrshakil.com/api/career/job-post/${jobId}/`)
       .then(res => {
         const job = res.data
         console.log(job)
@@ -56,7 +55,7 @@ export default function JobEditForm () {
 
     try {
       const res = await axios.put(
-        `http://agarwal.mrshakil.com/api/career/job-post/${jobId}/`,
+        `https://agarwal.mrshakil.com/api/career/job-post/${jobId}/`,
         payload,
         {
           headers: {
@@ -86,7 +85,9 @@ export default function JobEditForm () {
               Update job post
             </h1>
             <p className='xl:w-[35%] w-full lg:w-[80%] text-sm'>
-             Edit and update your job opening details easily. Keep job information accurate, modify requirements, and ensure your listings attract the right candidates effectively.
+              Edit and update your job opening details easily. Keep job
+              information accurate, modify requirements, and ensure your
+              listings attract the right candidates effectively.
             </p>
           </div>
 

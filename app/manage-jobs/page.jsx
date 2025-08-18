@@ -28,7 +28,7 @@ export default function page () {
     console.log(id, token, 'check id ')
     try {
       await axios.delete(
-        `http://agarwal.mrshakil.com/api/career/job-post/${id}/`,
+        `https://agarwal.mrshakil.com/api/career/job-post/${id}/`,
         {
           headers: {
             Authorization: `Token ${token}`

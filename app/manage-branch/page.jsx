@@ -23,7 +23,7 @@ export default function Page () {
   const handleDelete = async id => {
     try {
       await axios.delete(
-        `http://agarwal.mrshakil.com/api/contact/branch/${id}/`
+        `https://agarwal.mrshakil.com/api/contact/branch/${id}/`
       )
       toast.success('Branch deleted successfully!')
       setBranches(prev => prev.filter(branch => branch.id !== id))
