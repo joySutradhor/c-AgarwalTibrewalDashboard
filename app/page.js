@@ -198,6 +198,7 @@ export default function CategoryManagement () {
       return
     }
     setAdding(true)
+    console.log(token)
     try {
       await axios.post(
         'https://agarwal.mrshakil.com/api/blog/blog-categories/',
@@ -209,7 +210,7 @@ export default function CategoryManagement () {
           headers: { Authorization: `Token ${token}` }
         }
       )
-      toast.success('Subcategory created successfully')
+      toast.success('Created successfully')
       setSubCategoryName('')
       setSelectedParent('')
       setModalOpen(false)
