@@ -309,16 +309,16 @@ export default function CategoryManagement () {
           {/* Create Subcategory Card */}
           <div className='xl:col-span-2'>
             <h4 className='font-semibold text-base mb-3 text-black/80'>
-              # Create Sub Category
+              # Create  Category
             </h4>
             <div
               onClick={() => setModalOpen(true)}
               className=' max-h-[25vh] min-h-[20vh] w-full border border-dashed border-gray-400 rounded flex flex-col items-center justify-center cursor-pointer hover:bg-gray-100'
-              title='Add Sub-category'
+              title='Add category'
             >
               <FiPlus size={48} className='text-gray-600' />
               <span className='mt-2 font-medium text-sm text-gray-700'>
-                Create Sub Category
+                Create  Category
               </span>
             </div>
           </div>
