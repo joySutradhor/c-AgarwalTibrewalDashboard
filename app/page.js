@@ -194,7 +194,7 @@ export default function CategoryManagement () {
   // Create subcategory
   const handleCreateSubcategory = async () => {
     if (!subCategoryName.trim()) {
-      toast.error('Subcategory name is required')
+      toast.error('Category name is required')
       return
     }
     setAdding(true)
