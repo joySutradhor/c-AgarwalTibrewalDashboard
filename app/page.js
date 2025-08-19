@@ -348,12 +348,12 @@ export default function CategoryManagement () {
           <div className='fixed inset-0 bg-black/50 flex items-center justify-center z-50'>
             <div className='bg-white rounded-lg p-6 w-96 shadow-lg'>
               <h3 className='text-lg font-bold mb-4 text-center text-[#1D204E]'>
-                Create Sub Category
+                Create  Category
               </h3>
               <div className='space-y-4'>
                 <input
                   type='text'
-                  placeholder='Subcategory Name'
+                  placeholder='Category Name'
                   value={subCategoryName}
                   onChange={e => setSubCategoryName(e.target.value)}
                   className='w-full p-2 border border-black/10 rounded outline-none'
