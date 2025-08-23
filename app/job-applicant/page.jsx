@@ -17,8 +17,8 @@ export default function Page () {
   }, [])
 
   // Filter applicants by name
-  const filteredApplications = jobApplications.filter(app =>
-    app.candiate_name.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredApplications = jobApplications?.filter(app =>
+    app?.candiate_name?.toLowerCase().includes(searchTerm?.toLowerCase())
   )
 
   return (
